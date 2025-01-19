@@ -20,7 +20,7 @@ Check out the live site: [Tasty Pic Landing Page](https://tasty-pic-landing-page
 
 ## 📸 Preview
 
-![Tasty Pic Landing Page Preview](../../assets/project1-tastypic-landing-page/tasty-pic-landing-page.png)
+![Tasty Pic Landing Page Preview](../../projects_overview/project1-tastypic-landing-page/tasty-pic-landing-page.png)
 
 ---
 
