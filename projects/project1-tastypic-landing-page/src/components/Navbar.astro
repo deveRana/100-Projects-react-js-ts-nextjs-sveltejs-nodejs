@@ -1,0 +1,83 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+---
+
+<nav
+  class="container relative py-6 px-5 flex flex-row justify-between items-center"
+>
+  <div>
+    <a
+      href="#"
+      class="font-montserrat text-2xl uppercase font-bold tracking-wider"
+      ><span class="bg-primaryColor py-1/2 px-1/2 mr-1">T</span>astyPic</a
+    >
+  </div>
+
+  <div
+    id="menu"
+    class="hidden w-full absolute top-0 left-0 bg-whiteColor
+  md:block md:static md:w-auto"
+  >
+    <ul
+      class="flex flex-col items-center border-b-2 border-solid border-primaryColor
+    md:border-none md:flex-row"
+    >
+      <li
+        class="my-5 md:my-0 px-5 text-base font-bold hover:text-primaryColor ease-in-out duration-200"
+      >
+        <a href="#hero">Home</a>
+      </li>
+      <li
+        class="my-5 md:my-0 px-5 text-base font-bold hover:text-primaryColor ease-in-out duration-200"
+      >
+        <a href="#dishes">Dishes</a>
+      </li>
+      <li
+        class="my-5 md:my-0 px-5 text-base font-bold hover:text-primaryColor ease-in-out duration-200"
+      >
+        <a href="#services">Services</a>
+      </li>
+    </ul>
+
+    <div
+      id="closeBtn"
+      class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+
+  <div class="flex flex-row">
+    <div>
+      <a
+        href="#dishes"
+        class="bg-primaryColor text-whiteColor px-5 py-2 rounded-3xl text-base shadow-custom"
+      >
+        <i class="fa-solid fa-phone-volume text-base pr-2"></i> Order</a
+      >
+    </div>
+
+    <div id="hamburger" class="block md:hidden">
+      <i class="fa-solid fa-bars cursor-pointer text-blackColor ml-4 text-xl"
+      ></i>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById("hamburger");
+  const closeBtn = document.getElementById("closeBtn");
+  const menu = document.getElementById("menu");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("hidden");
+  });
+</script>
