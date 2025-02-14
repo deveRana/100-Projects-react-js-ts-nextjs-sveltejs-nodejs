@@ -18,7 +18,7 @@ Each project is self-contained, with its own README file, source code, and asset
 ## 📂 Project List
 
 1. [Project 01: Tasty Pic Landing Page](projects/project1-tastypic-landing-page/README.md)
-1. [Project 01: Tasty Pic Landing Page](projects/project2-react-drag-and-drop/README.md)
+1. [Project 02: Tasty Pic Landing Page](projects/project2-react-drag-and-drop/README.md)
 
 ---
 
